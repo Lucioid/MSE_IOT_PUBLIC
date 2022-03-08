@@ -1,6 +1,6 @@
 void init_sensors(){
 	// Pino umidade
-	pinMode(13, OUTPUT);
+//	pinMode(13, OUTPUT);
 
 	//Trig e echo do JSN 
 	pinMode(trigPin, OUTPUT);

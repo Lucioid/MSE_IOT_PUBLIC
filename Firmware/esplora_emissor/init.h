@@ -8,7 +8,7 @@ int umidade;
 float umid_percentual;
 
 // Defina o Trig e o pino de eco:
-#define trigPin 19
+#define trigPin 0
 #define echoPin 23
 #define humidpin 34
 // Defina as variáveis:

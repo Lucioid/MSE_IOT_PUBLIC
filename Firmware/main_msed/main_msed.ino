@@ -1,8 +1,8 @@
 #include "init.h"
 void publishMessage(String AWS_IOT_PUBLISH_TOPIC, String keys, String values);
-
 void setup() {
-  init_disp_lora(); 
+  
+  init_display(); 
   get_credentials();
   config_topics();
   yield();
@@ -26,11 +26,13 @@ void loop() {
     }
   }
   if (client.connected()){
-    liga_green();
+    if(luz_azul){
+      liga_green();
+    }
   }else{
     liga_red();
     reconecta_wifi();
-    connectAWS();}
+    connectAWS();
   }
 	show_display();
   delay(200);

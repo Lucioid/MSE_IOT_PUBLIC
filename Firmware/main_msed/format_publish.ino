@@ -41,4 +41,5 @@ void publishMessage(String AWS_IOT_PUBLISH_TOPIC,  String keys,  String values){
 		Serial.println(String(jsonBuffer));
 	#endif
   client.publish(AWS_IOT_PUBLISH_TOPIC.c_str(), jsonBuffer);
+  luz_azul=true;
 }

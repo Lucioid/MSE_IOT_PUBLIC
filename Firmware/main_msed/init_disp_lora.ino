@@ -47,7 +47,7 @@ bool init_comunicacao_lora(void)
 	return status_init;
 }
 
-void init_disp_lora(){
+void init_display(){
 	/* Configuracao da I²C para o display OLED */
 	Wire.begin(OLED_SDA_PIN, OLED_SCL_PIN);
 

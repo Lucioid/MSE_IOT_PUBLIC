@@ -94,3 +94,4 @@ String packet;
 
 // Define the array of leds
 CRGB leds[NUM_LEDS];
+bool luz_azul;
